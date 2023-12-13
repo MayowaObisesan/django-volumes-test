@@ -1,11 +1,30 @@
-# Django Volumes
-Django Volume Template for Railway
+---
+title: Django Volume Support
+description: A Django Template with Volume Support for Railway
+tags:
+  - django
+  - railway volumes
+  - python
+---
+## Deploy
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AWUIv6)
 
-This template is a great starter if you are looking to use Railway Volumes with your Django project for user uploaded media files. It takes all the complexity out of configuring your project for serving files.
+# Django with Volume Support Example
 
-No more help channel because you can't get volumes to work!
+This example template starts a Django server utilizing volume support on Railway for storing and serving assets.
 
-## Troubleshooting
+## ✨ Features
+
+- Django
+- Railway Volumes
+- Python 3
+
+## 💁‍♀️ How to use
+
+- Clone locally and install packages with pip using `pip install -r requirements.txt`
+- Run locally using `python manage.py migrate && python manage.py collectstatic --noinput && gunicorn mysite.wsgi`
+
+## 📝 Troubleshooting
 If you get the following error `No such file or directory: '/app/media/directory/...'` make sure your directory exists since your folder structure has to be build from scratch for production purpose on the persistent storage.
 
 You can use something like this:
@@ -16,5 +35,5 @@ if not os.path.exists(new_directory):
   os.makedirs(new_directory)
 ```
 
-## Deploy
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/AWUIv6)
+## Support
+<a href="https://www.buymeacoffee.com/vinfehring" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
